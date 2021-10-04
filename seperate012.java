@@ -4,7 +4,59 @@ import java.util.Scanner.*;
 // Used Dutch National Flag Approach 
 class solution{
 	void fun(int[] A,int len){
-		// Logic
+		
+
+	
+
+			switch(A[mid]){
+
+				case 0:{
+
+					temp=A[low];
+
+					A[low]=A[mid];
+
+					A[mid]=temp;
+
+					mid++;
+
+					low++;
+
+					break;	
+
+				}
+
+				case 1:{
+
+					mid++;
+
+					break;
+
+				}
+
+				case 2:{
+
+					temp=A[mid];
+
+					A[mid]=A[high];
+
+					A[high]=temp;
+
+					high--;
+
+					break;	
+
+				}
+
+			}
+
+		}
+
+		for(int i=0;i<len;i++){
+
+			System.out.println(A[i]);
+
+		}
 	}
 }
 
